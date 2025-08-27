@@ -4,7 +4,7 @@
 This repository provides a reference implementation of a **triple‑parametric deep learning framework (TPDLF)** that takes a discretized 2D curve and **reparameterizes** it into three classical spline forms—**Bézier**, **B‑spline**, and **NURBS**—in a single model. A shared encoder compresses the input curve; three light decoders infer:
 - Bézier control points
 - B‑spline control points
-- NURBS control points + **positive** weights (via softplus)
+- NURBS control points + weights 
 
 Closed‑form geometric layers reconstruct smooth curves directly from these parameters, allowing **interpretable** design variables that transfer cleanly to CAD/CAE and downstream editing.
 
